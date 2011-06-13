@@ -191,4 +191,34 @@
       <Property key="ValidateFileName" value="False" />
     </CustomProperties>
   </Template>
+  <Template uid="044e2b5b-d614-411b-8030-24d5fc51a577" shortcut="" description="Integration Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    [Category(&quot;Integration&quot;)]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;        $END$&#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="7c9c8b03-fbce-452d-bad8-9761549c2ac0" shortcut="" description="Unit Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;using Rhino.Mocks;&#xD;&#xA;using Rhino.Mocks.Interfaces;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;&#xD;&#xA;        $END$&#xD;&#xA;        &#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
 </TemplatesExport>
