@@ -30,6 +30,9 @@
     </CustomProperties>
   </Template>
   <Template uid="19721b3e-9833-438d-9aac-e7113e070ee8" shortcut="" description="NHibernate Mapping File" text="&lt;?xml version=&quot;1.0&quot; ?&gt;&#xD;&#xA;&lt;hibernate-mapping xmlns=&quot;urn:nhibernate-mapping-2.2&quot; assembly=&quot;$ASSEMBLY$&quot; namespace=&quot;$NAMESPACE$&quot; default-lazy=&quot;false&quot;&gt;&#xD;&#xA;	&lt;class name=&quot;$ClassName$&quot; table=&quot;$TableName$&quot;&gt;&#xD;&#xA;		&lt;id&gt;&#xD;&#xA;			&lt;generator/&gt;&#xD;&#xA;		&lt;/id&gt;&#xD;&#xA;		&#xD;&#xA;		&lt;property/&gt;&#xD;&#xA;	&#xD;&#xA;	&lt;/class&gt;&#xD;&#xA;&lt;/hibernate-mapping&gt;" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
     <Categories />
     <Variables>
       <Variable name="ASSEMBLY" expression="getOutputName()" initialRange="0" />
@@ -89,6 +92,9 @@
     </CustomProperties>
   </Template>
   <Template uid="19721b3e-9833-438d-9aac-e7113e070ee8" shortcut="" description="NHibernate Mapping File" text="&lt;?xml version=&quot;1.0&quot; ?&gt;&#xD;&#xA;&lt;hibernate-mapping xmlns=&quot;urn:nhibernate-mapping-2.2&quot; assembly=&quot;$ASSEMBLY$&quot; namespace=&quot;$NAMESPACE$&quot; default-lazy=&quot;false&quot;&gt;&#xD;&#xA;	&lt;class name=&quot;$ClassName$&quot; table=&quot;$TableName$&quot;&gt;&#xD;&#xA;		&lt;id&gt;&#xD;&#xA;			&lt;generator/&gt;&#xD;&#xA;		&lt;/id&gt;&#xD;&#xA;		&#xD;&#xA;		&lt;property/&gt;&#xD;&#xA;	&#xD;&#xA;	&lt;/class&gt;&#xD;&#xA;&lt;/hibernate-mapping&gt;" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
     <Categories />
     <Variables>
       <Variable name="ASSEMBLY" expression="getOutputName()" initialRange="0" />
@@ -148,6 +154,9 @@
     </CustomProperties>
   </Template>
   <Template uid="19721b3e-9833-438d-9aac-e7113e070ee8" shortcut="" description="NHibernate Mapping File" text="&lt;?xml version=&quot;1.0&quot; ?&gt;&#xD;&#xA;&lt;hibernate-mapping xmlns=&quot;urn:nhibernate-mapping-2.2&quot; assembly=&quot;$ASSEMBLY$&quot; namespace=&quot;$NAMESPACE$&quot; default-lazy=&quot;false&quot;&gt;&#xD;&#xA;	&lt;class name=&quot;$ClassName$&quot; table=&quot;$TableName$&quot;&gt;&#xD;&#xA;		&lt;id&gt;&#xD;&#xA;			&lt;generator/&gt;&#xD;&#xA;		&lt;/id&gt;&#xD;&#xA;		&#xD;&#xA;		&lt;property/&gt;&#xD;&#xA;	&#xD;&#xA;	&lt;/class&gt;&#xD;&#xA;&lt;/hibernate-mapping&gt;" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
     <Categories />
     <Variables>
       <Variable name="ASSEMBLY" expression="getOutputName()" initialRange="0" />
@@ -177,6 +186,66 @@
     </CustomProperties>
   </Template>
   <Template uid="044e2b5b-d614-411b-8030-24d5fc51a577" shortcut="" description="Integration Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    [Category(&quot;Integration&quot;)]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;        $END$&#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="044e2b5b-d614-411b-8030-24d5fc51a577" shortcut="" description="Integration Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    [Category(&quot;Integration&quot;)]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;        $END$&#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="7c9c8b03-fbce-452d-bad8-9761549c2ac0" shortcut="" description="Unit Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;using Rhino.Mocks;&#xD;&#xA;using Rhino.Mocks.Interfaces;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;&#xD;&#xA;        $END$&#xD;&#xA;        &#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="044e2b5b-d614-411b-8030-24d5fc51a577" shortcut="" description="Integration Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    [Category(&quot;Integration&quot;)]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;        $END$&#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="7c9c8b03-fbce-452d-bad8-9761549c2ac0" shortcut="" description="Unit Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;using Rhino.Mocks;&#xD;&#xA;using Rhino.Mocks.Interfaces;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;&#xD;&#xA;        $END$&#xD;&#xA;        &#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
     <Context>
       <ProjectLanguageContext language="CSharp" />
     </Context>
