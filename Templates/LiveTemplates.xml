@@ -2423,4 +2423,61 @@
     <Variables />
     <CustomProperties />
   </Template>
+  <Template uid="87907c99-ec1a-452f-b144-278046474d3f" shortcut="btest" description="Behavioral Test" text="&#xD;&#xA;[Test]&#xD;&#xA;public void $TestMethodName$()&#xD;&#xA;{&#xD;&#xA;	// Assert&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="TestMethodName" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="0f1d2e3e-f9e3-4134-9e23-192c7512906e" shortcut="fluentMap" description="Fluent NHibernate Map Class" text="/// &lt;summary&gt;&#xD;&#xA;/// Fluent map&#xD;&#xA;/// &lt;/summary&gt;&#xD;&#xA;public class $POCO$FluentMap : ClassMap&lt;$POCO$&gt;&#xD;&#xA;{&#xD;&#xA;    /// &lt;summary&gt;&#xD;&#xA;    /// Constructor&#xD;&#xA;    /// &lt;/summary&gt;&#xD;&#xA;    public $POCO$FluentMap()&#xD;&#xA;    {&#xD;&#xA;        Table(&quot;$TableName$&quot;);&#xD;&#xA;        Id(x =&gt; x.$POCO$Id, &quot;$POCO$_id&quot;);&#xD;&#xA;        //Map(x =&gt; x.PropertyName, &quot;field_name&quot;);&#xD;&#xA;       &#xD;&#xA;    }&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="POCO" expression="" initialRange="0" />
+      <Variable name="TableName" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="52a78960-fb89-4cbd-97e3-3f0a83e4bdcf" shortcut="partial" description="Creates a partial mock" text="MockRepository.GeneratePartialMock&lt;$TYPE$&gt;();$END$" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="TYPE" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="e6c9997c-4d87-470c-97b6-1d480ef55139" shortcut="piv" description="protected internal virtual" text="protected internal virtual" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="888b80ad-81f3-4139-b6e7-daf3c0593c61" shortcut="pv" description="public virtual" text="public virtual" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+  <Template uid="50856796-8a88-4dcd-a420-393cbb1a6a69" shortcut="test" description="Unit Test" text="[Test]&#xD;&#xA;public void $TestMethodName$()&#xD;&#xA;{&#xD;&#xA;	// Arrange&#xD;&#xA;	&#xD;&#xA;	// Act&#xD;&#xA;	&#xD;&#xA;	// Assert&#xD;&#xA;	&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="TestMethodName" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
 </TemplatesExport>
