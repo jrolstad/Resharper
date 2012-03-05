@@ -320,4 +320,66 @@
       <Property key="ValidateFileName" value="False" />
     </CustomProperties>
   </Template>
+  <Template uid="e7180111-fdc6-43e2-a281-c24fa1ce02bf" shortcut="" description="Fitnesse Column Fixture" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;using Rhino.Mocks;&#xD;&#xA;using NUnit.Framework.SyntaxHelpers;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    public class $TestClassName$:fit.ColumnFixture&#xD;&#xA;    {&#xD;&#xA;		#region Constructor&#xD;&#xA;		&#xD;&#xA;		#region Constructor&#xD;&#xA;&#xD;&#xA;        /// &lt;summary&gt;&#xD;&#xA;        /// Default Constructor&#xD;&#xA;        /// &lt;/summary&gt;&#xD;&#xA;        public $TestClassName$()&#xD;&#xA;        {&#xD;&#xA;            Data.Database.Current = Data.Database.Union;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        #endregion&#xD;&#xA;		&#xD;&#xA;		#endregion&#xD;&#xA;        &#xD;&#xA;        $END$&#xD;&#xA;&#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="NewColumnFixture" />
+      <Property key="Extension" value="txt" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="044e2b5b-d614-411b-8030-24d5fc51a577" shortcut="" description="Integration Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    [Category(&quot;Integration&quot;)]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;        $END$&#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="7c9c8b03-fbce-452d-bad8-9761549c2ac0" shortcut="" description="Unit Test" text="using System;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;using System.Linq;&#xD;&#xA;using NUnit.Framework;&#xD;&#xA;&#xD;&#xA;namespace $DefaultNamespace$&#xD;&#xA;{&#xD;&#xA;    [TestFixture]&#xD;&#xA;    public class $TestClassName$&#xD;&#xA;    {&#xD;&#xA;&#xD;&#xA;        $END$&#xD;&#xA;        &#xD;&#xA;	}&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <ProjectLanguageContext language="CSharp" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DefaultNamespace" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="TestClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="Class" />
+      <Property key="Extension" value="cs" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
+  <Template uid="19721b3e-9833-438d-9aac-e7113e070ee8" shortcut="" description="NHibernate Mapping File" text="&lt;?xml version=&quot;1.0&quot; ?&gt;&#xD;&#xA;&lt;hibernate-mapping xmlns=&quot;urn:nhibernate-mapping-2.2&quot; assembly=&quot;$ASSEMBLY$&quot; namespace=&quot;$NAMESPACE$&quot; default-lazy=&quot;false&quot;&gt;&#xD;&#xA;	&lt;class name=&quot;$ClassName$&quot; table=&quot;$TableName$&quot;&gt;&#xD;&#xA;		&lt;id&gt;&#xD;&#xA;			&lt;generator/&gt;&#xD;&#xA;		&lt;/id&gt;&#xD;&#xA;		&#xD;&#xA;		&lt;property/&gt;&#xD;&#xA;	&#xD;&#xA;	&lt;/class&gt;&#xD;&#xA;&lt;/hibernate-mapping&gt;" reformat="True" shortenQualifiedReferences="True">
+    <Scopes>
+      <Scope type="Everywhere" />
+    </Scopes>
+    <Categories />
+    <Variables>
+      <Variable name="ASSEMBLY" expression="getOutputName()" initialRange="0" />
+      <Variable name="NAMESPACE" expression="fileDefaultNamespace()" initialRange="0" />
+      <Variable name="ClassName" expression="getFileNameWithoutExtension()" initialRange="0" />
+      <Variable name="TableName" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties>
+      <Property key="FileName" value="NewFile.hbm" />
+      <Property key="Extension" value="xml" />
+      <Property key="ValidateFileName" value="False" />
+    </CustomProperties>
+  </Template>
 </TemplatesExport>
